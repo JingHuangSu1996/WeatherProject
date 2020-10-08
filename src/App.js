@@ -1,24 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import useGet from './data/useGet';
+import {
+  makeWeatherUrl,
+  makeUnsplashUrl,
+} from './data/utils/constants';
 
 function App() {
+  const {
+    resolver: {
+      data: WeatherData,
+      loading: isWeatherAPILoading,
+    },
+    handleOnSubmit,
+  } = useGet(makeWeatherUrl);
+
+  const {
+    resolver: {
+      data: ImageData,
+      loading: isImageAPILoading,
+    },
+    handleOnSubmit: handleOnImgSubmit,
+  } = useGet(makeUnsplashUrl);
+
+  React.useEffect(() => {
+    handleOnSubmit({ city: 'taipei' });
+    handleOnImgSubmit({ query: 'taipei' });
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {isWeatherAPILoading && isImageAPILoading
+        ? 'loading'
+        : 'Hello'}
     </div>
   );
 }

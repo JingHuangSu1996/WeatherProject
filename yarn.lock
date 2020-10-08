@@ -1018,7 +1018,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.5.1", "@babel/runtime@^7.5.5":
+"@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.5.1":
   version "7.11.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.11.2.tgz#f549c13c754cc40b87644b9fa9f09a6a95fe0736"
   integrity sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==
@@ -3983,6 +3983,11 @@ depd@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
   integrity sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak=
+
+dequal@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/dequal/-/dequal-2.0.2.tgz#85ca22025e3a87e65ef75a7a437b35284a7e319d"
+  integrity sha512-q9K8BlJVxK7hQYqa6XISGmBZbtQQWVXSrRrWreHC94rMt1QL/Impruc+7p2CYSYuVIUr+YCt6hjrs1kkdJRTug==
 
 des.js@^1.0.0:
   version "1.0.1"
@@ -8947,13 +8952,6 @@ react-is@^16.12.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-query@^2.23.1:
-  version "2.23.1"
-  resolved "https://registry.yarnpkg.com/react-query/-/react-query-2.23.1.tgz#7d676f56d3c6e96b4de4d0b178baf6bb6a0ec272"
-  integrity sha512-qIma0Kvr//LWgWFah7RcntvD4FurXXdQaQeIfqhCWKdhihhe3Xs5BHsljAP68jo719/+xhWxL3I96SvrU4gGHA==
-  dependencies:
-    "@babel/runtime" "^7.5.5"
-
 react-scripts@3.4.3:
   version "3.4.3"
   resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-3.4.3.tgz#21de5eb93de41ee92cd0b85b0e1298d0bb2e6c51"
@@ -10242,6 +10240,13 @@ svgo@^1.0.0, svgo@^1.2.2:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
+
+swr@^0.3.5:
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/swr/-/swr-0.3.5.tgz#848a80e7b23b96d7221468555d8688d3efdecbc7"
+  integrity sha512-sZNed7JBEnFC42+XFWJ+aYGGVg5D3qNyISZOke3oL/gM1UNm0tsj9mbhTPT99SV9DzbKbT1NFTTRandPdhvpUA==
+  dependencies:
+    dequal "2.0.2"
 
 symbol-tree@^3.2.2:
   version "3.2.4"

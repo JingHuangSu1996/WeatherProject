@@ -30,5 +30,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "d3": "^6.2.0",
+    "folktale": "^2.3.2",
+    "ramda": "^0.27.1",
+    "react-query": "^2.23.1",
+    "styled-components": "^5.2.0"
   }
 }
